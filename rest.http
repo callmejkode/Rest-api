@@ -1,0 +1,2 @@
+### Get the name page 
+GET  http://localhost:5000/products
