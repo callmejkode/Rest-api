@@ -1,0 +1,22 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/callmejkode/Rest-api.git"
+  },
+  "author": "Karthik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/callmejkode/Rest-api/issues"
+  },
+  "homepage": "https://github.com/callmejkode/Rest-api#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
