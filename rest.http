@@ -1,2 +1,14 @@
 ### Get the name page 
 GET  http://localhost:5000/products
+
+### Create a new product
+POST  http://localhost:5000/products
+
+### Get a single product
+GET  http://localhost:5000/products/id
+
+### Update a single product
+PATCH http://localhost:5000/products/id
+
+### Delete a single product
+DELETE  http://localhost:5000/products/id
