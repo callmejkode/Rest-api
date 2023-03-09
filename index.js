@@ -1,9 +1,17 @@
 const express = require("express");
 const app = express();
+const mongoose = require("mongoose");
+
+mongoose
+  .connect(
+    "mongodb+srv://jkode:Ride0rdie@restapi.xojthif.mongodb.net/?retryWrites=true&w=majority"
+  )
+  .then(() => {
+    console.log("MongoDB connected....");
+  });
+
 const ProductRoute = require("./Routes/Product");
-
 app.use("/products", ProductRoute);
-
 //next parameters is now a global variable
 app.use((req, res, next) => {
   const err = new Error("page not found");
