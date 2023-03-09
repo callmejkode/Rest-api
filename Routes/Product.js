@@ -3,7 +3,8 @@ const router = express.Router();
 
 //Get a list of products
 router.get("/", (req, res, next) => {
-  res.send("get all the products");
+  next(new Error("cannot get products"));
+  // res.send("get all the products");
 });
 
 // Add a new product
@@ -12,7 +13,6 @@ router.post("/", (req, res, next) => {
 });
 
 /// Products modified
-
 //Get a single product
 router.get("/id", (req, res, next) => {
   res.send("Get a single product");

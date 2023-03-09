@@ -12,3 +12,6 @@ PATCH http://localhost:5000/products/id
 
 ### Delete a single product
 DELETE  http://localhost:5000/products/id
+
+###
+GET http://localhost:5000/wverv
