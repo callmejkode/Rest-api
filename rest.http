@@ -1,17 +1,37 @@
-### Get the name page 
+### Get the lost of products
 GET  http://localhost:5000/products
 
 ### Create a new product
 POST  http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name":"Iphone 12 mini",
+    "price": 40000
+}
 
 ### Get a single product
-GET  http://localhost:5000/products/id
+GET  http://localhost:5000/products/640ad7711292aa0b70378bc0
 
 ### Update a single product
-PATCH http://localhost:5000/products/id
+PATCH http://localhost:5000/products/id/640ad7711292aa0b70378bc0
+Content-Type: application/json
+{
+    "price":
+}
 
 ### Delete a single product
-DELETE  http://localhost:5000/products/id
+DELETE  http://localhost:5000/products/640ad5164cf5db8b7f1d8123
 
 ###
-GET http://localhost:5000/wverv
+GET http://localhost:5000/
+
+###
+
+GET http://localhost:5000/test?name=jkode&price=1000
+
+###
+GET http://localhost:5000/test/628565733/jkode
+
+### 
+POST http://localhost:5000/test
